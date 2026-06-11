@@ -11,8 +11,8 @@ const products = [
 
 function ProductCard({ name, category, price }) {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden group cursor-pointer">
-      <div className="bg-gray-100 h-56 flex items-center justify-center">
+    <div className="bg-white rounded-2xl overflow-hidden group cursor-pointer hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+      <div className="bg-gray-100 h-56 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform duration-500">
         <span className="text-gray-400 text-sm">Image</span>
       </div>
       <div className="p-4 flex flex-col gap-2">
@@ -31,9 +31,10 @@ function ProductCard({ name, category, price }) {
   )
 }
 
+
 function Products() {
   return (
-    <section className="py-24 bg-background">
+    <section id="products" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Section Header */}
@@ -43,7 +44,8 @@ function Products() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+ gap-6">
           {products.map((product) => (
             <ProductCard
               key={product.id}

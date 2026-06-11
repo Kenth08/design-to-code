@@ -3,7 +3,7 @@ function Footer() {
     <footer className="bg-foreground text-white">
       <div className="max-w-6xl mx-auto px-6 py-16">
 
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
 
           <div className="flex flex-col gap-4">
             <span className="text-xl font-bold">YourStore</span>

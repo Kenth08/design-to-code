@@ -10,9 +10,9 @@ function Navbar() {
 
         {/* Nav Links */}
         <ul className="flex items-center gap-8 list-none">
-          <li><a href="#" className="text-sm text-foreground hover:text-primary transition-colors">Home</a></li>
-          <li><a href="#" className="text-sm text-foreground hover:text-primary transition-colors">Products</a></li>
-          <li><a href="#" className="text-sm text-foreground hover:text-primary transition-colors">Contact</a></li>
+          <li><a href="#home" className="text-sm text-foreground hover:text-primary transition-colors">Home</a></li>
+          <li><a href="#products" className="text-sm text-foreground hover:text-primary transition-colors">Products</a></li>
+          <li><a href="#contact" className="text-sm text-foreground hover:text-primary transition-colors">Contact</a></li>
         </ul>
 
         {/* Cart Button */}

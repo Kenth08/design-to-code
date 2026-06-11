@@ -12,4 +12,5 @@ body {
   background-color: theme(--color-background);
   color: theme(--color-foreground);
   font-family: theme(--font-sans);
+  scroll-behavior: smooth;
 }

@@ -1,14 +1,15 @@
 function Hero() {
   return (
-    <section className="min-h-screen bg-background flex items-center">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 gap-12 items-center">
+    
+    <section id="home"className="min-h-screen bg-background flex items-center">
+      <div className="max-w-6xl mx-auto px-6 gridgrid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* Left: Text */}
         <div className="flex flex-col gap-6">
           <span className="text-primary text-sm font-medium uppercase tracking-widest">
             New Collection 2025
           </span>
-          <h1 className="text-6xl font-bold text-foreground leading-tight">
+          <h1 className="text-4xl md:text-6xlfont-bold text-foreground leading-tight">
             Style That Speaks For Itself
           </h1>
           <p className="text-gray-500 text-lg leading-relaxed">

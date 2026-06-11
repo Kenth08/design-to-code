@@ -45,7 +45,7 @@ function Features() {
           <p className="text-gray-500 mt-3 text-lg">We make it easy to love what you buy</p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
           {features.map((feature) => (
             <FeatureCard
               key={feature.id}
