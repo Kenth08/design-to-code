@@ -9,7 +9,7 @@ const products = [
   { id: 8, name: "Running Cap", category: "Accessories", price: "$45.00" },
 ]
 
-function ProductCard({ name, category, price }) {
+function ProductCard({ name, category, price, addToCart}) {
   return (
     <div className="bg-white rounded-2xl overflow-hidden group cursor-pointer hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
       <div className="bg-gray-100 h-56 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform duration-500">
@@ -22,7 +22,7 @@ function ProductCard({ name, category, price }) {
         <h3 className="font-semibold text-foreground">{name}</h3>
         <div className="flex items-center justify-between mt-1">
           <span className="text-foreground font-bold">{price}</span>
-          <button className="bg-primary text-white text-xs font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity">
+          <button onClick={addToCart} className="bg-primary text-white text-xs font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity">
             Add to Cart
           </button>
         </div>
@@ -32,7 +32,7 @@ function ProductCard({ name, category, price }) {
 }
 
 
-function Products() {
+function Products({ addToCart }) {
   return (
     <section id="products" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-6">
@@ -47,14 +47,18 @@ function Products() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
  gap-6">
           {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              name={product.name}
-              category={product.category}
-              price={product.price}
-            />
+          <ProductCard
+            key={product.id}
+            name={product.name}
+            category={product.category}
+            price={product.price}
+            addToCart={addToCart}
+          />
+
           ))}
         </div>
+        
+        
 
       </div>
     </section>
